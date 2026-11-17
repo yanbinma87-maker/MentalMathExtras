@@ -1,0 +1,24 @@
+:root { --bg: #0f1726; --card: #172238; --text: #e6ecf7; --dim: #9aa8bf; --accent: #6fa3ff; --green: #4cc38a; --line: #2a3a58; }
+@media (prefers-color-scheme: light) {
+  :root { --bg: #f3f6fb; --card: #ffffff; --text: #1b2433; --dim: #5d6a80; --accent: #2f6fde; --green: #1e8e5a; --line: #dce3ef; }
+}
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--bg); color: var(--text); font: 17px/1.6 -apple-system, "Segoe UI", sans-serif; }
+main { max-width: 720px; margin: 0 auto; padding: 32px 16px 64px; }
+header { display: flex; align-items: center; gap: 14px; margin-bottom: 8px; flex-wrap: wrap; }
+header .icons { display: flex; gap: 8px; }
+header img { width: 56px; height: 56px; border-radius: 12.5px; }
+h1 { font: 800 30px/1.2 -apple-system, "Segoe UI", sans-serif; margin: 0; }
+h2 { font-size: 19px; margin: 28px 0 6px; color: var(--accent); }
+a { color: var(--accent); }
+nav { display: flex; flex-wrap: wrap; gap: 6px 14px; margin: 14px 0 22px; font-size: 15px; }
+nav a { text-decoration: none; }
+nav a.on { color: var(--text); font-weight: 600; }
+.dim { color: var(--dim); font-size: 14px; }
+.card { background: var(--card); border: 1px solid var(--line); border-radius: 14px; padding: 2px 18px 4px; margin: 14px 0; }
+.card h2 { margin-top: 14px; }
+.app { display: flex; gap: 16px; align-items: flex-start; padding: 16px 18px; }
+.app img { width: 64px; height: 64px; border-radius: 14px; flex: none; }
+.app h2 { margin: 0 0 4px; }
+.app.teachers h2 { color: var(--green); }
+.app p { margin: 0 0 6px; }
